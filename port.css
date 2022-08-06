@@ -1,0 +1,262 @@
+/*Import*/
+/*Open Sans Regular 400*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500&family=Open+Sans&display=swap');
+
+body{
+    display: flex;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav Bar */
+.nav1{
+    height: 100vh;
+    width: 13vw;
+    border-right: 2px solid black;
+    text-align: center;
+    position: fixed;
+}
+
+#name{
+    padding-top: 1.5vh;
+    padding-bottom: .5vh;
+    font-size: 32px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
+    color: #6699CC;
+    font-size: 40px;
+}
+
+#HC{
+    color: purple;
+}
+
+.nav1 > div >button:hover{
+    cursor: pointer;
+    box-shadow: inset 13vw 0 0 0 #6699CC;
+    color: white;
+    font-weight: bold;
+}
+
+.nav1 > div > button{
+    font-size: 1.5rem;
+    width: 8vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 13vw;
+    padding: 1vh;
+    border-left: none;
+    border-right: none;
+    background-color: rgba(240, 240, 255);
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: inset 0 0 0 0 #6699CC;
+    transition: ease-out 0.1s;
+}
+
+.nav1 > div{
+    width: 13vw;
+    height: 33vh;
+}
+
+.nav1 > div >img{
+    width: 30px;
+    height: 30px;
+    margin-top: 27vh;
+}
+
+#smimgG {
+    font-size: 35px;
+    color: gray;
+    display: flex;
+    height: 3.8vh;
+    margin-top: 28vh;
+}
+
+#smimgG:hover #G{
+    display: inline-block;
+}
+
+#smimgG:hover{
+    color: black;
+}
+
+#smimgI {
+    font-size: 35px;
+    color: gray;
+    display: flex;
+    height: 3.8vh;
+    margin-top: 28vh;
+}
+
+#smimgI:hover #I{
+    display: inline-block;
+}
+
+#smimgI:hover{
+    color: #E4405F;
+}
+
+#smimgL {
+    font-size: 35px;
+    color: gray;
+    display: flex;
+    height: 3.8vh;
+    margin-top: 28vh;
+}
+
+#smimgL:hover #L{
+    display: inline-block;
+}
+
+#smimgL:hover{
+    color: #0A66C2;
+}
+
+#sm{
+    display: flex;
+    width: 13vw;
+    justify-content: space-around;
+}
+
+#sm > a{
+    text-decoration: none;
+}
+
+#G{
+    display: none;
+    font-size: 20px;
+    padding-left: 5px;
+    margin-right: 1px;
+    padding-top: 1.5px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#G:hover{
+    display: inline-block
+}
+
+#I{
+    display: none;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 1.5px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#L{
+    display: none;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 1.8px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+/*
+#test{
+    width: 85.9vw;
+    height: 200vh;
+    position: absolute;
+    right: 0px;
+    border: 1px solid black;
+}
+*/
+/* About Me */
+.content1{
+    width: 85.9vw;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    opacity: 0;
+    transition: 1s;
+}
+
+.content1 > div > h1{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wai{
+    width: 30vw;
+    height: 23vh;
+    margin-top: 36.5vh;
+    margin-left: 2vw;
+}
+
+.content1 > div >p{
+    margin-top: 2vh;
+    font-size: large;
+}
+
+.hsg{
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+}
+
+.light{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 40vw;
+    height: 100vh;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 1);
+}
+
+.panim{
+    height: 100px;
+    width: 100px;
+    top: 0px;
+    right: 0vw;
+    position: absolute;
+    border-radius: 90px;
+    border: 1px solid white;
+}
+
+#imglol{
+    width: 115px;
+    height: 50px;
+    position: absolute;
+    right: 2vw;
+    bottom: 10vh;
+    pointer-events: none;
+}
+
+#imgpy{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 25vw;
+    bottom: 43vh;
+    pointer-events: none;
+}
+
+#imgcsci{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 7vw;
+    bottom: 74vh;
+    pointer-events: none;
+}
+
+#imgpkmn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 30vw;
+    bottom: 80vh;
+    pointer-events: none;
+}

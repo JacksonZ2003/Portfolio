@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JZ's Portfolio</title>
+        <link rel="stylesheet" href="port.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="nav1">
+            <div>
+                <h1 id="name">Jackson Zhu</h1>
+                <p>Student at <span id="HC">Hunter College</span></p>
+            </div>
+            <div>
+                <button id="button1" onclick="c1fin()">About Me</button> <br>
+                <button id="button2">My Skills</button> <br>
+                <button id="button3">Projects</button> <br>
+                <button id="button4">Contact Me</button>
+            </div>
+            <div id="sm">
+                <a id="smimgG" href="https://github.com/JacksonZ2003"><i class="fa fa-github"></i><p id="G">GitHub</p></a>
+                <a id="smimgI" href="https://www.instagram.com/jacksonzhu1115/"><i class="fa fa-instagram"></i><p id="I">Instagram</p></a>
+                <a id="smimgL" href="https://www.linkedin.com/in/jackson-zhu-271109243/"><i class="fa fa-linkedin"></i><p id="L">Linkedin</p></a>
+            </div>
+        </nav>
+        <div class="content1">
+            <div class="wai">
+                <h1>Who Am I?</h1>
+                <p>
+                    I'm currently a soon to be sophomore student at <span id="HC">Hunter College</span> majoring in Computer Science. I enjoy learning more programming lanagues and am looking to learn more 
+                    and improve on this skill in the near future.
+                </p>
+                <p>
+                    Not only am I willing to learn more to further improve myself but I also enjoy working with others. Some of my hobbies include playing <span id="lap" onmouseover="lap()">games</span> with friends, going to
+                    the gym, and 
+                </p>
+            </div>
+            <div class="hsg" onmouseover="lite()" onmouseout="litel()">
+                <img id="imglol" src="lol.jfif" alt="league of legends">
+                <img id="imgpy" src="py.png" alt="python">
+                <img id="imgcsci" src="csci.png" alt="computer science">
+                <img id="imgpkmn" src="pkmn.png" alt="pokemon">
+                <div class="light"></div>
+            </div>
+            <img class="panim" src="pikachu.png" alt="detective pikachu">
+        </div>
+    <script>
+
+        function lap(){
+            document.getElementById("lap").innerHTML="<span id='lol'>League Of Legends</span> and <span id='pkmn'>Pokémon</span>"
+            document.getElementById("lol").style.fontWeight="bold"
+            document.getElementById("lol").style.color="#C28F2C"
+            document.getElementById("lol").style.textShadow="2px 1px 2px black"
+            document.getElementById("pkmn").style.fontWeight="bold"
+            document.getElementById("pkmn").style.color="#ffcb05"
+            document.getElementById("pkmn").style.textShadow="-2px 1px 1px #3c5aa6"
+        }
+
+        function c1fin(){
+            document.querySelector(".content1").style.opacity="1"
+        }
+
+        var pos = document.documentElement;
+
+        function lite(){
+            document.querySelector(".light").style.background="radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0, 0, 0, 1) 20%)"
+            pos.addEventListener("mousemove", e=>{
+                    pos.style.setProperty("--x", (e.layerX) +"px")
+                    pos.style.setProperty("--y", (e.clientY) +"px")
+                    console.log(e)
+                })
+        }
+
+        function litel(){
+            document.querySelector(".light").style.background="rgba(0,0,0,1)"
+        }
+    </script>
+    </body>
+</html>

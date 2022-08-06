@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jackson Zhu</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="portmain.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <div class="navcontainer">
+            <ul class="navbar">
+                <li class="active" value="1"><i class="fa fa-home"></i>&nbsp;Home</li>
+                <li value="2"><i class="fa fa-user"></i>&nbsp;About</li>
+                <li value="3"><i class="fa fa-gear"></i>&nbsp;Skills</li>
+                <li value="4"><i class="fa fa-folder"></i>&nbsp;Projects</li>
+                <li value="5"><i class="fa fa-address-book"></i>&nbsp;Contact Me</li>
+            </ul>
+        </div>
+        <div id="sm">
+            <a id="smimgG" class="smimg" href="https://github.com/JacksonZ2003"><i class="fa fa-github"></i><p id="G">GitHub</p></a>
+            <a id="smimgI" class="smimg" href="https://www.instagram.com/jacksonzhu1115/"><i class="fa fa-instagram"></i><p id="I">Instagram</p></a>
+            <a id="smimgL" class="smimg" href="https://www.linkedin.com/in/jackson-zhu-271109243/"><i class="fa fa-linkedin"></i><p id="L">Linkedin</p></a>
+        </div>
+        <div class="content1">
+            <div id="imgsky"></div>
+            <img id="imgcloud1" src="cloud1.png" alt="">
+            <img id="imgcloud11" src="cloud1.png" alt="">
+            <img id="imgcloud2" src="cloud2.png" alt="">
+            <img id="imgcloud21" src="cloud2.png" alt="">
+            <img id="imgcloud3" src="cloud3.png" alt="">
+            <img id="imgcloud31" src="cloud3.png" alt="">
+            <h1>Jackson Zhu</h1>
+            <p>Student at <span id="hc">Hunter College</span></p>
+            <img id="gifpika" src="pika.gif" alt="">
+        </div>
+        <div class="content2">
+
+        </div>
+        <div class="content3">
+
+        </div>
+        <div class="content4">
+
+        </div>
+        <div class="content5">
+
+        </div>
+        </span>
+        <script>
+            $(document).on("click", "ul li", function(){
+                $(this).addClass("active").siblings().removeClass("active")
+                for (var i=1; i<=5; i++){
+                    if (i != this.value){
+                        console.log(i)
+                        document.querySelector(".content"+i).style.opacity="0"
+                    }
+                    else{
+                        document.querySelector(".content"+this.value).style.opacity="1"
+                    }
+                } 
+            })
+
+            
+        </script>
+    </body>
+</html>
