@@ -66,6 +66,7 @@ body{
     left: 1vw;
     z-index: 1;
     border-radius: 10px;
+    background-color: white;
 }
 
 #sm >a{
@@ -143,10 +144,19 @@ body{
 
 #imgsky{
     width: 100%;
-    height: 55vh;
+    height: 100vh;
     position: absolute;
     top: -10vh;
     background-image: linear-gradient(#9dacea 50%, #a4b3ec, #aeb8ec, #c2caee);
+}
+
+#imggrass{
+    width: 100%;
+    height: 55vh;
+    position: absolute;
+    top: 45vh;
+    background-image: linear-gradient(#d9b879, #d6b978, #c7ae63);
+    border-top-left-radius: 100%;
 }
 
 
