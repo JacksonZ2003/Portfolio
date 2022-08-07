@@ -49,6 +49,13 @@
                 </p>
         </div>
         <div class="content3">
+            <h1>Skills and Experience</h1>
+            <p>
+                I'm currently a student at <span id="hc">Hunter College</span> majoring in Computer Science hoping to progress to be a software engineer. My experience with programming language include javascript, css, html, python, and some C++. With python being my strongest programming language.
+            </p>
+            <p>
+                I currently have no workplace experience with these programming languages but can build basic programs with python and websites with css, html, and javascript.
+            </p>
         </div>
         <div class="content4">
             <div class="slideshow">
@@ -56,7 +63,7 @@
                     <input type="radio" name="r" id="r1" checked>
                     <input type="radio" name="r" id="r2">
                     <input type="radio" name="r" id="r3">
-
+            
                     <div class="slide s1">
                         <a href="https://jacksonz2003.github.io/Iceland/"><img src="iceland.jpeg" alt=""></a>
                     </div>
@@ -66,23 +73,22 @@
                     <div class="slide">
                         <a href="https://project-2-hacked-website-qcc2022edlc2w4.qcc2022edlc2w4.repl.co/"><img src="career.jpeg" alt=""></a>
                     </div>
-                </d iv>
+                </div>
                 <div class="description">
                     <p><strong>Type:</strong>&nbsp;<span id="worktype">Alone</span></p>
-                    <p><strong>Description:</strong>Worked on replicating a traveling website through the use of html and css. </p>
+                    <p><strong>Description:</strong><span id="desc">Worked on replicating a traveling website through the use of html and css.</span></p>
                 </div>
             </div>
-
             <div class="navigation">
                 <label for="r1" class="bar" onclick="iceland()"></label>
                 <label for="r2" class="bar" onclick="shop()"></label>
                 <label for="r3" class="bar" onclick="career()"></label>
-            </div>   
+            </div> 
         </div>
         <div class="content5">
-            <div class="form">
+            <div class="form" action="https://formsubmit.co/2b930f907e208cd0d9eb4bbbac3e0d7a" method="POST">
                 <h1>Contact Me</h1>
-                <form action="https://formsubmit.co/2b930f907e208cd0d9eb4bbbac3e0d7a" method="POST">
+                <form >
                     <p class="text"><span>Full Name:</span><input type="text" name="name" placeholder="Full Name" required></p>
                     <p class="text"><span>Email:</span><input type="email" name="email" placeholder="Email" required></p>
                     <p class="text"><span>Subject:</span><input type="text" name="_subject" placeholder="Subject" required></p>
@@ -95,14 +101,17 @@
         <script>
             function iceland(){
                 document.getElementById("worktype").innerHTML="Alone"
+                document.getElementById("desc").innerHTML="Worked on replicating a traveling website through the use of html and css."
             }
 
             function career(){
                 document.getElementById("worktype").innerHTML="Group"
+                document.getElementById("desc").innerHTML="Worked on a website where the focus is to help many find their career path and provide them with info about the field. Using css, html, and javascript my main focus was to create the contact form and the career/degree information."
             }
 
             function shop(){
                 document.getElementById("worktype").innerHTML="Group"
+                document.getElementById("desc").innerHTML="Worked on creating a static shopping website with no backend. Using css and html we we're able to create the front-end of a website with my main focus being on the navbar and the drop down menu."
             }
 
             function lap(){
