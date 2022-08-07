@@ -49,25 +49,62 @@
                 </p>
         </div>
         <div class="content3">
-
         </div>
         <div class="content4">
+            <div class="slideshow">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
 
+                    <div class="slide s1">
+                        <a href="https://jacksonz2003.github.io/Iceland/"><img src="iceland.jpeg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://cssgrouphackathon-qcc2022edlc2w4-2.qcc2022edlc2w4.repl.co/"><img src="shop.jpeg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://project-2-hacked-website-qcc2022edlc2w4.qcc2022edlc2w4.repl.co/"><img src="career.jpeg" alt=""></a>
+                    </div>
+                </d iv>
+                <div class="description">
+                    <p><strong>Type:</strong>&nbsp;<span id="worktype">Alone</span></p>
+                    <p><strong>Description:</strong>Worked on replicating a traveling website through the use of html and css. </p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <label for="r1" class="bar" onclick="iceland()"></label>
+                <label for="r2" class="bar" onclick="shop()"></label>
+                <label for="r3" class="bar" onclick="career()"></label>
+            </div>   
         </div>
         <div class="content5">
-            <div>
-                <form action="https://formsubmit.co/2b930f907e208cd0d9eb4bbbac3e0d7a" method="POST" onsubmit="runCode(event)">
+            <div class="form">
                 <h1>Contact Me</h1>
-                    <input type="text" name="name" placeholder="Full Name" required id="fullname">
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="text" name="_subject" placeholder="Subject" required>
-                    <input type="text" name="message" placeholder="Message" required id="message">
-                    <input type="submit" value="Submit">
+                <form action="https://formsubmit.co/2b930f907e208cd0d9eb4bbbac3e0d7a" method="POST">
+                    <p class="text"><span>Full Name:</span><input type="text" name="name" placeholder="Full Name" required></p>
+                    <p class="text"><span>Email:</span><input type="email" name="email" placeholder="Email" required></p>
+                    <p class="text"><span>Subject:</span><input type="text" name="_subject" placeholder="Subject" required></p>
+                    <p id="message"><span>Message:</span> <br> <textarea rows="5" cols="40" name="message" placeholder="Message" required></textarea> 
+                    <p id="sub"><input type="submit" value="Submit"></p>
                 </form>
             </div>
+            <img src="pplane.webp" alt="">
         </div>
-        </span>
         <script>
+            function iceland(){
+                document.getElementById("worktype").innerHTML="Alone"
+            }
+
+            function career(){
+                document.getElementById("worktype").innerHTML="Group"
+            }
+
+            function shop(){
+                document.getElementById("worktype").innerHTML="Group"
+            }
+
             function lap(){
             document.getElementById("lap").innerHTML="<span id='lol'>League Of Legends</span> and <span id='pkmn'>Pokémon</span>"
             document.getElementById("lol").style.fontWeight="bold"
@@ -91,7 +128,6 @@
                         if (i != 1){
                             document.querySelector(".content"+i).style.pointerEvents="all"
                         }
-                        
                     }
                 } 
             })
