@@ -40,7 +40,7 @@
         <div class="content2">
             <h1>Who Am I?</h1>
                 <p>
-                    I'm currently a soon to be sophomore student at <span id="HC">Hunter College</span> majoring in Computer Science. I enjoy learning more programming lanagues and am looking to learn more 
+                    I'm currently a soon to be sophomore student at <span id="hc">Hunter College</span> majoring in Computer Science. I enjoy learning more programming lanagues and am looking to learn more 
                     and improve within the near future.
                 </p>
                 <p>
@@ -56,27 +56,42 @@
         </div>
         <div class="content5">
             <div>
-                <form action="https://formsubmit.co/2b930f907e208cd0d9eb4bbbac3e0d7a" method="POST" id="userform">
+                <form action="https://formsubmit.co/2b930f907e208cd0d9eb4bbbac3e0d7a" method="POST" onsubmit="runCode(event)">
                 <h1>Contact Me</h1>
-                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="text" name="name" placeholder="Full Name" required id="fullname">
                     <input type="email" name="email" placeholder="Email" required>
                     <input type="text" name="_subject" placeholder="Subject" required>
-                    <input type="text" name="message" placeholder="Message" required>
+                    <input type="text" name="message" placeholder="Message" required id="message">
                     <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
         </span>
         <script>
+            function lap(){
+            document.getElementById("lap").innerHTML="<span id='lol'>League Of Legends</span> and <span id='pkmn'>Pokémon</span>"
+            document.getElementById("lol").style.fontWeight="bold"
+            document.getElementById("lol").style.color="#C28F2C"
+            document.getElementById("lol").style.textShadow="2px 1px 2px black"
+            document.getElementById("pkmn").style.fontWeight="bold"
+            document.getElementById("pkmn").style.color="#ffcb05"
+            document.getElementById("pkmn").style.textShadow="-2px 1px 1px #3c5aa6"
+        }
+
             $(document).on("click", "ul li", function(){
                 $(this).addClass("active").siblings().removeClass("active")
                 for (var i=1; i<=5; i++){
                     if (i != this.value){
                         console.log(i)
                         document.querySelector(".content"+i).style.opacity="0"
+                        document.querySelector(".content"+i).style.pointerEvents="none"
                     }
                     else{
                         document.querySelector(".content"+this.value).style.opacity="1"
+                        if (i != 1){
+                            document.querySelector(".content"+i).style.pointerEvents="all"
+                        }
+                        
                     }
                 } 
             })
