@@ -38,7 +38,8 @@
             <img id="gifpika" src="pika.gif" alt="">
         </div>
         <div class="content2">
-            <h1>Who Am I?</h1>
+            <div class="aboutmejz">
+                <h1>Who Am I?</h1>
                 <p>
                     I'm currently a soon to be sophomore student at <span id="hc">Hunter College</span> majoring in Computer Science. I enjoy learning more programming lanagues and am looking to learn more 
                     and improve within the near future.
@@ -47,15 +48,53 @@
                     I also enjoy working with others as it brings in more productivity, ideas, and help. Some of my hobbies include playing <span id="lap" onmouseover="lap()">games</span> with friends and going to
                     the gym.
                 </p>
+            </div>
+            <div class="memories">
+                <div>
+                    <img src="pkmn.png" alt="">
+                    <p>I <strong>LOVE</strong> Pokemon.</p>
+                </div>
+                <div>
+                    <img src="lol.png" alt="">
+                    <p>Fun to play with friends.</p>
+                </div>
+                <div>
+                    <img src="py.png" alt="">
+                    <p>The programming langauge I'm best at.</p>
+                </div>
+                <div>
+                    <img src="csci.png" alt="">
+                    <p>Ehhh love computer science in general.</p>
+                </div>
+            </div>
         </div>
         <div class="content3">
-            <h1>Skills and Experience</h1>
-            <p>
-                I'm currently a student at <span id="hc">Hunter College</span> majoring in Computer Science hoping to progress to be a software engineer. My experience with programming language include javascript, css, html, python, and some C++. With python being my strongest programming language.
-            </p>
-            <p>
-                I currently have no workplace experience with these programming languages but can build basic programs with python and websites with css, html, and javascript.
-            </p>
+            <div>
+                <h1>Skills and Experience</h1>
+                <p>
+                    I'm currently a student at <span id="hc">Hunter College</span> majoring in Computer Science hoping to progress to be a software engineer. My experience with programming language include javascript, css, html, python, and some C++. With python being my strongest programming language.
+                </p>
+                <p>
+                    I currently have no workplace experience with these programming languages but can build basic programs with python and websites with css, html, and javascript.
+                </p>
+            </div>
+            <div id="skillwidth">
+                <div id="skilldiv">
+                    <h1>Skills</h1>
+                    <p>Python</p>
+                    <div class="totalbar"><div id="pybar"></div></div>
+                    <p>CSS/HTML</p>
+                    <div class="totalbar"><div id="csbar"></div></div>
+                    <p>Javascript</p>
+                    <div class="totalbar"><div id="jsbar"></div></div>
+                    <p>C++</p>
+                    <div class="totalbar"><div id="cpbar"></div></div>
+                </div>
+                <div id="expdiv">
+                    <h1>Experience</h1>
+                    <p>- None so far</p>
+                </div>
+            </div>
         </div>
         <div class="content4">
             <div class="slideshow">
@@ -86,9 +125,9 @@
             </div> 
         </div>
         <div class="content5">
-            <div class="form" action="https://formsubmit.co/2b930f907e208cd0d9eb4bbbac3e0d7a" method="POST">
+            <div>
                 <h1>Contact Me</h1>
-                <form >
+                <form class="form" action="https://formsubmit.co/2b930f907e208cd0d9eb4bbbac3e0d7a" method="POST">
                     <p class="text"><span>Full Name:</span><input type="text" name="name" placeholder="Full Name" required></p>
                     <p class="text"><span>Email:</span><input type="email" name="email" placeholder="Email" required></p>
                     <p class="text"><span>Subject:</span><input type="text" name="_subject" placeholder="Subject" required></p>

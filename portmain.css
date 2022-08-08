@@ -306,7 +306,7 @@ body{
     color: purple;
 }
 
-
+/*About Me*/
 .content2{
     position: absolute;
     left: 0px;
@@ -314,8 +314,42 @@ body{
     height: 90vh;
     opacity: 0;
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.aboutmejz{
+    width: 40%;
+}
+
+.aboutmejz > h1{
+    font-size: 40px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+.aboutmejz >p{
+    margin-bottom: 10px;
+}
+
+.memories > div >img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.memories > div{
+    width: 140px;
+    height: 160px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+/*Skills*/
 .content3{
     position: absolute;
     left: 0px;
@@ -323,6 +357,91 @@ body{
     height: 90vh;
     opacity: 0;
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content3 > div{
+    width: 35%;
+}
+
+.content3 > div >h1{
+    font-size: 40px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+.content3 > div > P{
+    margin-bottom: 10px;
+}
+
+#skilldiv{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#skilldiv > h1{
+    margin-bottom: 10px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+}
+
+#skilldiv > p{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.totalbar{
+    width: 90%;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#pybar{
+    width: 70%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #58ABE5;
+}
+
+#csbar{
+    width: 70%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #58ABE5;
+}
+
+#jsbar{
+    width: 25%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #58ABE5;
+}
+
+#cpbar{
+    width: 25%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #58ABE5;
+}
+
+#expdiv{
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 20vh;
+    margin-top: 15vh;
+    padding: 10px;
+}
+
+#skillwidth{
+    width: 20%;
 }
 
 /*Projects*/
@@ -482,6 +601,7 @@ form > p > span{
     padding: 1vh;
     border: 2px solid black;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #sub{
@@ -501,4 +621,8 @@ form > p > span{
     right: 10vw;
     top: 13vh;
     pointer-events: none;
+}
+
+#sub > input:hover{
+    background-color: #58ABE5;
 }
